@@ -25,4 +25,14 @@ app.get ("/",function(req,res)
         numberOfUnHealthyKidneys
      })
 })
+
+app.post("/",function(req,res){
+    const isHealthy = req.body.isHealthy;
+    user[0].kidneys.push({
+        healthy: isHealthy
+    })
+    res.json({
+       msz:"done!" 
+    })
+})
 app.listen(3000);
