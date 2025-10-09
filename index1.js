@@ -22,7 +22,10 @@ app.get("/route-handler", function(req, res){
   })
 })
 app.get('/',(req,res)=>{
+  setTimeout(()=>{
     res.send('Hello world!')
+  ,4000})
+    
 })
 
 app.listen(port,()=>
