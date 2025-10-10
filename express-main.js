@@ -35,4 +35,11 @@ app.post("/",function(req,res){
        msz:"done!" 
     })
 })
+app.put("/",function(req,res){
+    for ( let i=0;i<user[0].kidneys.length;i++){
+      user[0].kidneys[i].healthy = true;  
+    }
+})
+
+
 app.listen(3000);
